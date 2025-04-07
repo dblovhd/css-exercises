@@ -1,42 +1,51 @@
+/*Set font for entire body*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/*group selector to establish text color and font weight for p elements*/
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
+/*class selector to establish standard para font size*/
+.para {
+  font-size: 22px;
+}
+
+/*class selector to establish smaller font size*/
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
+/*class selector for baseline button style*/
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+/*class selector to style confirm button*/
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/*class selector to establish color size and weight for div elements with 'text' class attribute*/
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/*chain selector to modify div element with 'text' and 'child' class attribute */
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
-}
+
