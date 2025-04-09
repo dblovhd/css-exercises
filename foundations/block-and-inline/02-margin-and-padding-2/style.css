@@ -6,22 +6,44 @@ body {
 .card {
   width: 400px;
   background: #fff;
+  /*padding to add space between nested elements (content) and border*/
+  padding: 8px;
   margin: 16px auto;
 }
 
 .title {
+  /*reason top margin is 21.440 is that header elements add extra margins top and bottom by default*/
   background: #e3f4ff;
+  /*padding between content and border*/
+  padding: 10px;
+  /*margin to add space between title and content class*/
+  margin-bottom: 10px;
 }
 
 .content {
   background: #e3f4ff;
+  /*padding between content and border*/
+  padding: 10px;
+  /*margin to add space between content and button-container class*/
+  margin-bottom: 10px;
 }
 
 .button-container {
   background: #e3f4ff;
+  /*center text in container*/
+  text-align: center;
+  /*padding between content and border*/
+  padding: 10px;
+
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  /*move button to new line*/
+  display: block;
+  /*padding between content and border*/
+  padding: 5px;
+  /* center button block*/
+  margin: auto; 
 }
