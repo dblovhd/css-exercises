@@ -1,6 +1,13 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /*changed display to flex to display divs horizontally within header*/
+  display: flex;
+  /* centered divs along cross axis*/
+  align-items: center;
+  /* added space between divs and header border*/
+  padding: 8px;
+  ;
 }
 
 .logo {
@@ -9,17 +16,25 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  /* used auto to center logo within header*/
+  margin: auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* changed to flex to display items horizontally*/
+  display: flex;
+  /*removed ul default padding */
+  padding: 0px;
 }
 
 a {
   font-size: 22px;
   background: white;
+  /*added spaccing between content and items*/
   padding: 8px;
+  margin: 8px;
   /* this removes the line under the links */
   text-decoration: none;
 }
