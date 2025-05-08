@@ -20,7 +20,35 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /*Displays all content as flex*/
+  display: flex;
+  /*add spacing between column in flexbox*/
+  gap: 16px;
+  /*Add space between content and box border*/
+  padding: 16px;
 }
+
+.header {
+  /*Displays header and close button within header div horizontally, since close button is nested*/
+  display: flex;
+  /*Adds maximum space between elements*/
+  justify-content: space-between;
+  /*centers content in header flexbox on vertical axis*/
+  align-items: center;
+  /*Bold header text*/
+  font-weight: 800;
+  /*add spacing between header text and text*/
+  margin-bottom: 5px;
+  /*Increase header font size*/
+  font-size: 18px;
+
+}
+
+.text {
+  /*add spacing between text and buttons*/
+  margin-bottom: 16px;
+}
+
 
 .icon {
   color: royalblue;
@@ -33,6 +61,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*ensure content within modal flexbox does not shrink*/
+  flex-shrink: 0;
 }
 
 .close-button {
