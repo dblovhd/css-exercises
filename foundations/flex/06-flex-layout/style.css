@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*changed display to flex and flex direction column instead of default (horizontal)*/
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   width: 600px;
+  /* added space between img and input box*/
+  padding: 16px;
 }
 
 button {
@@ -16,6 +21,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /*added space around button container and text*/
+  padding: 12px;
 }
 
 input {
@@ -24,3 +31,60 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* removed bullets and default padding for ul*/
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*removed underscore from link and changed link text color*/
+a {
+  text-decoration: none;
+  color: grey;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*display content in footer inline and pushed left and right links to each end page*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
+
+/*display links inline and add gap between each element*/
+.left-links {
+  display: flex;
+  gap: 16px;
+  padding-left: 16px;
+}
+
+/*display links inline and add gap between each element*/
+.right-links {
+  display: flex;
+  gap: 16px;
+  padding-right: 16px;
+
+}
+
+/*center content*/
+.content {
+text-align: center;
+}
+
+/*encapsulated content div to center content in middle of screen using flex*/
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*added spacing between input and buttons*/
+.input {
+  margin-bottom: 16px;
+}
+
