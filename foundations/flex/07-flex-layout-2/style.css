@@ -53,7 +53,7 @@ body {
 .middle {
   display: flex;
 }
-/*encapsulating div to align cards inline and use flex properties to wrap, center each card and contents*/
+/*encapsulating div to display card divs inline and use flex properties to wrap, center each card and contents*/
 .cardset {
   display: flex;
   flex-wrap: wrap; 
